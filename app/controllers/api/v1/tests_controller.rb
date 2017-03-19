@@ -5,4 +5,11 @@ class Api::V1::TestsController < ApplicationController
       success: true,
     }
   end
+
+  def create
+    render json: {
+      text: 'This is the POST route hitting the app. Test works fine.',
+      success: true,
+    }
+  end
 end
